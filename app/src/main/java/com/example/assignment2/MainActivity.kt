@@ -128,5 +128,12 @@ fun MainScreen(activity: MainActivity) {
         }) {
             Text("Send Broadcast")
         }
+
+        Button(onClick = {
+            val intent = Intent(activity, ThirdActivity::class.java)
+            activity.startActivity(intent)
+        }) {
+            Text("View Image Activity")
+        }
     }
 }
